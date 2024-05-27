@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* Disable right-clicking */
+  /* user-drag: none; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.inter {
+  font-family: var(--font-inter);
+}
+
+.DM {
+  font-family: var(--font-DM);
+}
+
+/* rotating image */
+.animated-text {
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-bg {
+  background-image: url(/assets/png/background.png);
+}
+
+/* Made with 💙 by Stephen Adeniji
+https://stephen-adeniji.netlify.app/ */
